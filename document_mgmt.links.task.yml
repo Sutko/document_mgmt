@@ -1,0 +1,49 @@
+# Document routing definition
+document.settings_tab:
+  route_name: document.settings
+  title: 'Settings'
+  base_route: document.settings
+
+entity.document.canonical:
+  route_name: entity.document.canonical
+  base_route: entity.document.canonical
+  title: 'View'
+
+entity.document.edit_form:
+  route_name: entity.document.edit_form
+  base_route: entity.document.canonical
+  title: 'Edit'
+
+entity.document.version_history:
+  route_name: entity.document.version_history
+  base_route: entity.document.canonical
+  title: 'Revisions'
+
+entity.document.delete_form:
+  route_name:  entity.document.delete_form
+  base_route:  entity.document.canonical
+  title: Delete
+  weight: 10
+
+# Folder routing definition
+folder.settings_tab:
+  route_name: folder.settings
+  title: 'Settings'
+  base_route: folder.settings
+
+entity.folder.canonical:
+  route_name: entity.folder.canonical
+  base_route: entity.folder.canonical
+  title: 'View'
+
+entity.folder.edit_form:
+  route_name: entity.folder.edit_form
+  base_route: entity.folder.canonical
+  title: 'Edit'
+
+entity.folder.delete_form:
+  route_name:  entity.folder.delete_form
+  base_route:  entity.folder.canonical
+  title: Delete
+  weight: 10
+

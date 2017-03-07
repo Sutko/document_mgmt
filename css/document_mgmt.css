@@ -1,0 +1,34 @@
+span.triangle{
+	float: right;
+	width: 20px;
+	height: auto;
+	cursor: pointer;
+}
+
+ul.file_menu li{
+	list-style: none;
+}
+
+ul.file_menu li span{
+	color: #111;
+	text-decoration: none;
+}
+
+
+ul.file_menu li span:hover{
+	color: #337ab7;
+	cursor: pointer;
+}
+
+.form_upload_document .js-form-file.form-file.form-control{
+	padding: 0px;
+}
+
+#name_element.folder p{
+	cursor: pointer;
+	display: inline-block;
+}
+#name_element.folder p:hover{
+	color: blue;
+}
+

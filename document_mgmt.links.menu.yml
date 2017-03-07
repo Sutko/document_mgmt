@@ -1,0 +1,28 @@
+
+# Document menu items definition
+entity.document.collection:
+  title: 'Document list'
+  route_name: entity.document.collection
+  description: 'List Document entities'
+  parent: system.admin_structure
+  weight: 100
+
+document.admin.structure.settings:
+  title: Document settings
+  description: 'Configure Document entities'
+  route_name: document.settings
+  parent: system.admin_structure
+
+# Folder menu items definition
+entity.folder.collection:
+  title: 'Folder list'
+  route_name: entity.folder.collection
+  description: 'List Folder entities'
+  parent: system.admin_structure
+  weight: 100
+
+folder.admin.structure.settings:
+  title: Folder settings
+  description: 'Configure Folder entities'
+  route_name: folder.settings
+  parent: system.admin_structure

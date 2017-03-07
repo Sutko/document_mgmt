@@ -1,0 +1,42 @@
+<?php
+
+/**
+ * @file
+ * Contains document_mgmt.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function document_mgmt_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the document_mgmt module.
+    case 'help.page.document_mgmt':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function document_mgmt_theme() {
+  return [
+    'document_mgmt' => [
+      'template' => 'document_mgmt',
+      'render element' => 'children',
+    ],
+  ];
+}
+
+function document_mgmt_preprocess_html(&$variables) {
+  $variables['page']['#attached']['library'][] = 'document_mgmt/modal';
+  $variables['page']['#attached']['library'][] = 'core/drupal.ajax';
+  $variables['page']['highlighted']['#attributes']['data-toggle'][] = 'modal';
+}

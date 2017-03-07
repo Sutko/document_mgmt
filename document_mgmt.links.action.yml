@@ -1,0 +1,10 @@
+entity.document.add_form:
+  route_name: entity.document.add_form
+  title: 'Add Document'
+  appears_on:
+    - entity.document.collection
+entity.folder.add_form:
+  route_name: entity.folder.add_form
+  title: 'Add Folder'
+  appears_on:
+    - entity.folder.collection

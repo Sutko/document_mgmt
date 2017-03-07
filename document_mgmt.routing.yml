@@ -1,0 +1,125 @@
+
+document_mgmt.update_file:
+  path: '/document_mgmt/form/update_file/{id_file}'
+  defaults:
+    _form: '\Drupal\document_mgmt\Form\UpdateFile'
+    _title: 'Update File'
+  requirements:
+    _access: 'TRUE'
+
+document_mgmt.default_controller_Show_menu_file:
+  path: '/document_mgmt/show_menu_file/{id_file}/{name_file}'
+  defaults:
+    _controller: '\Drupal\document_mgmt\Controller\DefaultController::Show_menu_file'
+    _title: 'Menu file'
+  requirements:
+    _permission: 'access content'
+
+document_mgmt.default_controller_Show_menu_folder:
+  path: '/document_mgmt/show_menu_folder/{id_folder}/{name_folder}'
+  defaults:
+    _controller: '\Drupal\document_mgmt\Controller\DefaultController::Show_menu_folder'
+    _title: 'Menu folder'
+  requirements:
+    _permission: 'access content'
+
+document_mgmt.default_controller_Show_menu_add:
+  path: '/document_mgmt/show_menu_add/{id_folder}/{name_folder}'
+  defaults:
+    _controller: '\Drupal\document_mgmt\Controller\DefaultController::Show_menu_add'
+    _title: 'Menu folder'
+  requirements:
+    _permission: 'access content'
+
+document_mgmt.default_controller_Versions_file:
+  path: '/document_mgmt/versions_file/{id_file}'
+  defaults:
+    _controller: '\Drupal\document_mgmt\Controller\DefaultController::Versions_file'
+    _title: 'Versions file'
+  requirements:
+    _permission: 'access content'
+
+document_mgmt.default_controller_Properties_file:
+  path: '/document_mgmt/properties_file/{id_file}'
+  defaults:
+    _controller: '\Drupal\document_mgmt\Controller\DefaultController::Properties_file'
+    _title: 'Properties file'
+  requirements:
+    _permission: 'access content'
+
+document_mgmt.rename_file:
+  path: '/document_mgmt/form/rename_file/{id_file}/{name_file}'
+  defaults:
+    _form: '\Drupal\document_mgmt\Form\RenameFile'
+    _title: 'Rename File'
+  requirements:
+    _access: 'TRUE'
+  
+document_mgmt.add_folder:
+  path: '/document_mgmt/form/add_folder/{id_folder}/{name_folder}'
+  defaults:
+    _form: '\Drupal\document_mgmt\Form\AddFolder'
+    _title: 'Add Folder'
+  requirements:
+    _access: 'TRUE'
+  
+document_mgmt.rename_folder:
+  path: '/document_mgmt/form/rename_folder/{id_folder}/{name_folder}'
+  defaults:
+    _form: '\Drupal\document_mgmt\Form\RenameFolder'
+    _title: 'Rename Folder'
+  requirements:
+    _access: 'TRUE'
+
+document_mgmt.default_controller_Properties_folder:
+  path: '/document_mgmt/properties_folder/{id_file}'
+  defaults:
+    _controller: '\Drupal\document_mgmt\Controller\DefaultController::Properties_folder'
+    _title: 'Properties file'
+  requirements:
+    _permission: 'access content'
+  
+
+document_mgmt.delete_file:
+  path: '/document_mgmt/form/delete_file/{id_file}/{name_file}'
+  defaults:
+    _form: '\Drupal\document_mgmt\Form\DeleteFile'
+    _title: 'Delete File'
+  requirements:
+    _access: 'TRUE'
+  
+
+document_mgmt.add_file:
+  path: '/document_mgmt/form/add_file/{id_folder}/{name_folder}'
+  defaults:
+    _form: '\Drupal\document_mgmt\Form\AddFile'
+    _title: 'Add File'
+  requirements:
+    _access: 'TRUE'
+  
+
+document_mgmt.delete_folder:
+  path: '/document_mgmt/form/delete_folder/{id_folder}/{name_folder}'
+  defaults:
+    _form: '\Drupal\document_mgmt\Form\DeleteFolder'
+    _title: 'DeleteFolder'
+  requirements:
+    _access: 'TRUE'
+
+  
+document_mgmt.default_controller_Get_data:
+  path: '/document_mgmt/get_data'
+  defaults:
+    _controller: '\Drupal\document_mgmt\Controller\DefaultController::Get_data'
+    _title: 'Get_data'
+  requirements:
+    _permission: 'access content'
+
+
+document_mgmt.default_controller_GetDateForDocument:
+  path: '/document_mgmt/getdatefordocument/{action}/{id_document}/{name_document}'
+  defaults:
+    _controller: '\Drupal\document_mgmt\Controller\DefaultController::GetDateForDocument'
+    _title: 'Get Date For Document'
+  requirements:
+    _permission: 'access content'
